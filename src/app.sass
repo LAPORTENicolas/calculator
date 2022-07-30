@@ -1,0 +1,38 @@
+*
+  margin: 0
+  padding: 0
+
+
+.app
+  display: flex
+  margin: 10% 0
+
+
+.calculator
+  background: blue
+  margin: auto
+  width: fit-content
+  height: fit-content
+  .result
+    padding: 10px
+    text-align: right
+  .input
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: repeat(5, 1fr)
+    grid-gap: 20px
+    background: orange
+    width: fit-content
+    padding: 10px
+    .element
+      background: red
+      height: 70px
+      min-width: 70px
+      display: flex
+      &:hover
+        cursor: pointer
+      & > *
+        margin: auto
+      &a1
+        grid-row: 1
+        grid-column: 1 / 3
